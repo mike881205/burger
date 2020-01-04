@@ -1,24 +1,44 @@
-<h1>Burger Time!</h1>
+<h1 class="text-center">Burger Time!</h1>
+<hr>
 
-<h2>Menu</h2>
+<div class="row">
 
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
+  <div class="col-sm-6">
+
+    <h2 class="text-center">Menu</h2>
+
+    <ul>
+      {{#each burgers}}
+      {{#unless eaten}}
       {{> burgers/burger-block eat=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+      {{/unless}}
+      {{/each}}
+    </ul>
 
-<h2>Burgers that have been eaten!</h2>
+  </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
+  <div class="col-sm-6">
+
+    <h2 class="text-center">Burgers that have been eaten!</h2>
+
+    <ul>
+      {{#each burgers}}
+      {{#if eaten}}
       {{> burgers/burger-block eat=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+      {{/if}}
+      {{/each}}
+    </ul>
+
+  </div>
+
+</div>
+
+<hr>
+
+
+<div class="row text-center">
+
+  <div class="col-sm">
 
 <h2>Add a new burger to the menu</h2>
 <form class="create-form">
@@ -36,3 +56,7 @@
 
   <button type="submit">Add Burger</button>
 </form>
+
+  </div>
+
+</div>

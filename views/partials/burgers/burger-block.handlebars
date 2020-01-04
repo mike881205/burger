@@ -2,8 +2,10 @@
 	{{burger_name}}
 
 	<button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
-		{{#if eat}}Eat!{{else}}Make me another!{{/if}}
+		{{#if eat}}Devour It!{{else}}Make me another!{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">Throw it away!</button>
+	<button class="delete-burger" data-id="{{this.id}}">
+		{{#if eat}}Throw it away!{{else}}Never make this again{{/if}}
+	</button>
 </li>
