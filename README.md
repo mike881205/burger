@@ -4,6 +4,12 @@
 
 This app is designed to handle user/front-end requests, and - using controllers, models, a database, and server - return a response.
 
+## The following modules must be installed before using the app:
+
+* express
+* express-handlebars
+* mysql
+
 ## Instructions
 
 * On the left side of the page is a column with new burgers that are ready to be eaten, and on the right side is a column with burgers that have been eaten.
