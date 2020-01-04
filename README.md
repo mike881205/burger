@@ -34,27 +34,27 @@ This app is designed to handle user/front-end requests, and - using controllers,
 
 ## App Logic
 
-### MySQL Database
+### - MySQL Database
 
 Once the server is activated, the app will connect to the MySQL database "burgers.db" via the connection.js file in the config folder.
 
-### orm.js File
+### - orm.js File
 
 Importing the connection.js file, the orm.js file helps define the SQL syntax to use for different queries.
 
-### burger.js File
+### - burger.js File
 
 Inside the models folder is the burger.js file which requires the orm file. The ORM will be used to create functions that will interact with the database.
 
-### burgersController.js File
+### - burgersController.js File
 
 This file will set up the routes and requires the express module and burger.js files for its database functions. 
 
-### Handlebars files
+### - Handlebars files
 
 The handlebars files will render the HTML for the front end using information retrieved via the get request from the burgersController.js file.
 
-### Front end buttons/input
+### - Front end buttons/input
 
 * When the user visits the default or home route (/), a get request is made via AJAX, and the results are displayed on the page via the handlebars files.
 
